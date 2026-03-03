@@ -1,0 +1,142 @@
+/* Dashboard.css - Modern, responsive dashboard styles */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 16px;
+  background: #f7f9fb;
+  min-height: 100vh;
+}
+.dashboard-row {
+  display: flex;
+  gap: 24px;
+}
+.dashboard-cards-row > .dashboard-card {
+  flex: 1 1 0;
+  min-width: 220px;
+}
+.dashboard-charts-row > .dashboard-card {
+  flex: 1 1 0;
+  min-width: 340px;
+}
+.dashboard-recent-row {
+  width: 100%;
+}
+.dashboard-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dashboard-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4f8cff;
+}
+.trend-tabs {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.trend-tabs button {
+  background: #e6eaf3;
+  border: none;
+  border-radius: 6px;
+  margin-top: -35px;
+  padding: 6px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.2s;
+}
+.trend-tabs button.active {
+  background: #4f8cff;
+  color: #fff;
+}
+.trend-chart {
+  min-height: 180px;
+}
+.recent-expenses-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+.recent-expenses-table th, .recent-expenses-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.recent-expenses-table th {
+  background: #f3f6fa;
+  font-weight: 600;
+}
+.view-all-btn {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.dashboard-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.dashboard-action-btn {
+  background: #fff;
+  color: #4f8cff;
+  border: 1px solid #4f8cff;
+  border-radius: 5px;
+  padding: 10px 22px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.dashboard-action-btn:hover {
+  background: #4f8cff;
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .dashboard-row { flex-direction: column; }
+  .dashboard-cards-row > .dashboard-card,
+  .dashboard-charts-row > .dashboard-card { min-width: unset; }
+}
+.center-table th, .center-table td {
+  text-align: center;
+}
+.small-btn {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 0;
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.small-btn:hover {
+  background: #2563eb;
+}
+.recent-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
